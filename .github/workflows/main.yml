@@ -8,6 +8,6 @@ jobs:
     runs-on: ubuntu-20.04
     strategy:
       matrix:
-        job: [a, b]
+        job: [b,a]
     steps:
     - run: echo ${{ (matrix.job == 'a' && 'foo') || 'bar' }}
