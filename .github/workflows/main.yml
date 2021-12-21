@@ -2,7 +2,7 @@ on: push
 
 jobs:
     project-a-or-project-b:
-        runs-on: ubuntu-latest
+        runs-on: [ubuntu-latest, windows-latest]
         name: Project A or Project B
 
         steps:
